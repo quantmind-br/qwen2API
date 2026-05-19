@@ -103,7 +103,7 @@ export default function SettingsPage() {
     }
   }
 
-  const baseUrl = API_BASE || `http://${window.location.hostname}:7860`
+  const baseUrl = API_BASE || window.location.origin
 
   const curlExample = `# OpenAI streaming chat
   curl ${baseUrl}/v1/chat/completions \
